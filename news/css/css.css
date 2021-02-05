@@ -1,0 +1,42 @@
+.alertstuid {
+	BACKGROUND-IMAGE: url(image/bgtool2.png); POSITION: absolute; PADDING-BOTTOM: 20px; PADDING-LEFT: 20px; WIDTH: 260px; PADDING-RIGHT: 20px; DISPLAY: none; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: sans-serif; HEIGHT: 150px; FONT-SIZE: 14px; TOP: 170%; PADDING-TOP: 20px; center: 100%
+}
+.textbox {
+	BORDER-BOTTOM: #adb4cb 1px solid; BORDER-LEFT: #adb4cb 1px solid; BORDER-TOP: #adb4cb 1px solid; BORDER-RIGHT: #adb4cb 1px solid
+}
+.textbox:hover {
+	BORDER-BOTTOM: #adb4cb 1px solid; BORDER-LEFT: #adb4cb 1px solid; BACKGROUND-COLOR: #adb4cb; BORDER-TOP: #adb4cb 1px solid; BORDER-RIGHT: #adb4cb 1px solid
+}
+.picture {
+	BORDER-BOTTOM: #acaaca 5px solid; POSITION: absolute; TEXT-ALIGN: justify; BORDER-LEFT: #acaaca 5px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 10px; WIDTH: 200px; PADDING-RIGHT: 10px; DISPLAY: none; FONT-FAMILY: sans-serif; HEIGHT: 30px; FONT-SIZE: 14px; BORDER-TOP: #acaaca 5px solid; TOP: 60%; BORDER-RIGHT: #acaaca 5px solid; PADDING-TOP: 10px; center: 100%
+}
+.textfile {
+	BORDER-BOTTOM: #a2a8c4 1px solid; BORDER-LEFT: #a2a8c4 1px solid; BORDER-TOP: #a2a8c4 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #a2a8c4 1px solid
+}
+.submit {
+	BORDER-BOTTOM: #55618a 1px solid; BORDER-LEFT: #55618a 1px solid; BACKGROUND-COLOR: #6666cc; COLOR: #ffffff; BORDER-TOP: #55618a 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #55618a 1px solid
+}
+.reset {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BACKGROUND-COLOR: #ffffff; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.prosess {
+	BORDER-BOTTOM: #acaaca 5px solid; POSITION: absolute; TEXT-ALIGN: justify; BORDER-LEFT: #acaaca 5px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 10px; WIDTH: 300px; PADDING-RIGHT: 10px; DISPLAY: none; FONT-FAMILY: sans-serif; HEIGHT: 100px; FONT-SIZE: 14px; BORDER-TOP: #acaaca 5px solid; TOP: 75%; BORDER-RIGHT: #acaaca 5px solid; PADDING-TOP: 10px; center: 100%
+}
+.bgindex {
+	BACKGROUND-IMAGE: url(image/bgindex.png); BACKGROUND-COLOR: #d9e0e5; BACKGROUND-REPEAT: repeat-x
+}
+.bgtop {
+	BACKGROUND-IMAGE: url(image/bgtop.png); BACKGROUND-REPEAT: no-repeat
+}
+BODY {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.top2 {
+	BACKGROUND-IMAGE: url(image/tipb.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: 50% bottom
+}
+.tabhead {
+	BORDER-BOTTOM: #e4e7ed 2px dashed
+}
+.tabhead:hover {
+	BORDER-BOTTOM: #aab7cc 2px solid; BACKGROUND-COLOR: #dddce9
+}

@@ -1,0 +1,2 @@
+administrator/modules/mod_pdf/file_del.php
+administrator/modules/mod_pdf/photo_del.php
