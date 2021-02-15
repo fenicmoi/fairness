@@ -1,29 +1,5 @@
-<style type="text/css">
-<!--
-.style35 {font-family: Tahoma;
-	font-size: 10px;
-}
-.style45 {font-family: Tahoma;
-	font-size: 9px;
-}
-.style46 {color: #666666}
-.style19 {font-family: Tahoma;
-	font-size: 12px;
-}
-.tabtd {BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
-}
-.style24 {color: #009900;
-	font-weight: bold;
-}
-.style31 {font-family: "MS Sans Serif";
-	font-size: 14px;
-	color: #666666;
-}
--->
-</style>
-<table border="0" cellspacing="0" cellpadding="0" 
-width="100%">
-  <!--DWLayoutTable-->
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tbody>
     <tr>
       <td height="10" width="30"></td>
@@ -35,7 +11,7 @@ width="100%">
       <td style="BORDER-BOTTOM: #6699cc 2px solid" 
                             valign="top"><font color="#9966cc" 
                               face="sans-serif"><img src="icons/linkbullet.gif" width="17" height="11" /> News</font> <font 
-                              size="2"><b>ÁØÁ¢èÒÇÊÒÃ áÅÐ ¡Ô¨¡ÃÃÁµèÒ§æ </b></font></td>
+                              size="2"><b></b></font></td>
       <td></td>
     </tr>
   </tbody>
@@ -44,13 +20,12 @@ width="100%">
   <tr>
     <td width="1%">&nbsp;</td>
     <td width="99%" valign="top"><?
-//============ ÍèÒ¹¢éÍÁØÅËÁÇ´
-include("include/connect.php");  
-//"SELECT * FROM  tb_act where status_act='1' order by id_act desc ";
-//$sqlCat="select * from nt_act   ";
+
+include("include/condb.php");  
+
 $sqlCat="SELECT * FROM  nt_act where status_act='1' ";
-		$queryCat=mysql_query($sqlCat);
-		$Num_Rows = mysql_num_rows($queryCat);
+		$queryCat=mysqli_query($con,$sqlCat);
+		$Num_Rows = mysqli_num_rows($con,$queryCat);
 
 		$Per_Page = 3;   // Per Page
 
@@ -79,18 +54,17 @@ $sqlCat="SELECT * FROM  nt_act where status_act='1' ";
 		}
 
 		$sqlCat.=" order  by id_act desc LIMIT $Page_Start , $Per_Page";
-		$queryCat  = mysql_query($sqlCat);
+		$queryCat  = mysqli_query($con,$sqlCat);
 
 
-		echo"<table border=\"0\"  cellspacing=\"1\" cellpadding=\"1\"><tr>";
-		$intRows = 0;
-		while($resutCat=mysql_fetch_array($queryCat))
+		echo "<table border=\"0\"  cellspacing=\"1\" cellpadding=\"1\"><tr>";
+		@$intRows = 0;
+		while(@$resutCat=mysqli_fetch_array($con,$queryCat))
 		{
 			echo "<td>"; 
-			$intRows++;
+			@$intRows++;
 ?>
-        <table cellspacing="10" cellpadding="5" 
-                                width="100%">
+        <table cellspacing="10" cellpadding="5" width="100%">
           <tbody>
             <tr>
               <td height="255" valign="top" class="tabtd"><table id="Table_01" width="126" height="100" border="0" cellpadding="0" cellspacing="0">
@@ -102,10 +76,10 @@ $sqlCat="SELECT * FROM  nt_act where status_act='1' ";
                   <tr>
                     <td height="85" background="images/bx_04.png"><img src="images/bx_04.png" width="10" height="50" alt="" /></td>
                     <td><img src="administrator/modules/mod_photo/myphoto/<?  
-include("include/connect.php");     
+include("include/condb.php");     
 $strSQL = "SELECT * FROM nt_photo where id_photo='$resutCat[id_photo]' ";
-$objQuery = mysql_query($strSQL);
- $objResult = mysql_fetch_array($objQuery); 
+$objQuery = mysqli_query($con,$strSQL);
+ $objResult = mysqli_fetch_array($con,$objQuery); 
  if($objResult[id_act]=="$resutCat[id_act]")
  {
  echo"$objResult[name_photo]";
@@ -126,16 +100,16 @@ $objQuery = mysql_query($strSQL);
                   <br />
                   <b><font 
                                 size="2">
-                    <?=$resutCat["name_act"];?>
+                    <?php  echo @$resutCat["name_act"];?>
                     </font></b><br />
                   <font 
                                 color="#999999" size="2">Update :
-                    <?=$resutCat["date_act"];?>
+                    <?php echo @$resutCat["date_act"];?>
                 </font><br />
                   <font size="2">
-                    <?=$message=substr("$resutCat[detail_act]",0,80)."&nbsp;..."; ?>
+                    <?php echo $message=substr("@$resutCat[detail_act]",0,80)."&nbsp;..."; ?>
                   </font><br />
-                  <font  size="2"><a href="civil-new.php?id_act=<?=$resutCat["id_act"];?>"  title="´ÙÃÒÂÅÐàÍÕÂ´" >´ÙÃÒÂÅÐàÍÕÂ´...</a></font> </td>
+                  <font  size="2"><a href="civil-new.php?id_act=<?php echo @$resutCat["id_act"];?>"  title="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â´" >ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â´...</a></font> </td>
             </tr>
           </tbody>
         </table>
@@ -144,14 +118,12 @@ $objQuery = mysql_query($strSQL);
 		if($Prev_Page)
 		{
 			echo "";
-			//echo " <a href='$_SERVER[SCRIPT_NAME]?Page=$Prev_Page' title='¡ÅÑº'><< Back</a> ";
 		}
 
 		for($i=1; $i<=$Num_Pages; $i++){
 			if($i != $Page)
 			{
 			    echo "";
-				//echo "[ <a href='$_SERVER[SCRIPT_NAME]?Page=$i' >$i</a> ]";
 			}
 			else
 			{
@@ -162,12 +134,9 @@ $objQuery = mysql_query($strSQL);
 		if($Page!=$Num_Pages)
 		{
 			echo "";
-			//echo " <a href ='$_SERVER[SCRIPT_NAME]?Page=$Next_Page' title='¶Ñ´ä»'>Next>></a> ";
 		}
 		?>
         </span>
-        <?
-	//============  áÊ´§á¶ÇÅÐ 3 µÑÇ
 													echo"</td>";
 			if(($intRows)%3==0)
 			{
@@ -177,8 +146,8 @@ $objQuery = mysql_query($strSQL);
 		echo"</tr></table>";
 ?>
         <span class="style19">
-        <!--       <?= $Num_Rows;?> ÍÑÅºÑéÁ : -->
-        <!-- <?=$Num_Pages;?> Ë¹éÒ :-->
+        <!--       <?= $Num_Rows;?> ï¿½ï¿½Åºï¿½ï¿½ï¿½ : -->
+        <!-- <?=$Num_Pages;?> Ë¹ï¿½ï¿½ :-->
       </span></td>
   </tr>
 </table>
@@ -186,10 +155,9 @@ $objQuery = mysql_query($strSQL);
   <tr>
     <td width="1%" height="122">&nbsp;</td>
     <td width="99%" valign="top"><?
-//============ ÍèÒ¹¢éÍÁØÅËÁÇ´
+
 include("include/connect.php");  
-//"SELECT * FROM  tb_act where status_act='1' order by id_act desc ";
-//$sqlCat="select * from nt_act   ";
+
 $sqlCat="SELECT * FROM  nt_act  where status_act='0' ";
 		$queryCat=mysql_query($sqlCat);
 		$Num_Rows = mysql_num_rows($queryCat);
@@ -266,16 +234,16 @@ $objQuery = mysql_query($strSQL);
                     <td width="1%" valign="top">&nbsp;</td>
                     <td width="92%" valign="top"><b><font 
                                 size="2">
-                      <?=$resutCat["name_act"];?>
+                      <?=@$resutCat["name_act"];?>
                       </font></b><br />
                       <span class="style35"><font 
                                 color="#999999">Update :
-                        <?=$resutCat["date_act"];?>
+                        <?=@$resutCat["date_act"];?>
                       </font> </span><br />
                       <font size="2">
-                      <?=$message=substr("$resutCat[detail_act]",0,50)."&nbsp;..."; ?>
+                      <?=@$message=substr("$resutCat[detail_act]",0,50)."&nbsp;..."; ?>
                       </font><br />
-                      <font  size="2"><a href="civil-new.php?id_act=<?=$resutCat["id_act"];?>"  title="´ÙÃÒÂÅÐàÍÕÂ´" >´ÙÃÒÂÅÐàÍÕÂ´...</a>
+                      <font  size="2"><a href="civil-new.php?id_act=<?=@$resutCat["id_act"];?>"  title="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â´" >ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â´...</a>
                       <?
 $strDateAdd = date('d-m-Y',strtotime("-7 day"));
 if($resutCat[date_in] >= "$strDateAdd")	
@@ -299,7 +267,7 @@ else
 		if($Prev_Page)
 		{
 			echo "";
-			//echo " <a href='$_SERVER[SCRIPT_NAME]?Page=$Prev_Page' title='¡ÅÑº'><< Back</a> ";
+			//echo " <a href='$_SERVER[SCRIPT_NAME]?Page=$Prev_Page' title='ï¿½ï¿½Ñº'><< Back</a> ";
 		}
 
 		for($i=1; $i<=$Num_Pages; $i++){
@@ -317,12 +285,12 @@ else
 		if($Page!=$Num_Pages)
 		{
 			echo "";
-			//echo " <a href ='$_SERVER[SCRIPT_NAME]?Page=$Next_Page' title='¶Ñ´ä»'>Next>></a> ";
+			//echo " <a href ='$_SERVER[SCRIPT_NAME]?Page=$Next_Page' title='ï¿½Ñ´ï¿½'>Next>></a> ";
 		}
 		?>
         </span>
         <?
-	//============  áÊ´§á¶ÇÅÐ 3 µÑÇ
+	//============  ï¿½Ê´ï¿½ï¿½ï¿½ï¿½ï¿½ 3 ï¿½ï¿½ï¿½
 													echo"</td>";
 			if(($intRows)%2==0)
 			{
@@ -332,8 +300,8 @@ else
 		echo"</tr></table>";
 ?>
         <span class="style19">
-        <!--       <?= $Num_Rows;?> ÍÑÅºÑéÁ : -->
-        <!-- <?=$Num_Pages;?> Ë¹éÒ :-->
+        <!--       <?= $Num_Rows;?> ï¿½ï¿½Åºï¿½ï¿½ï¿½ : -->
+        <!-- <?=$Num_Pages;?> Ë¹ï¿½ï¿½ :-->
       </span></td>
   </tr>
 </table>

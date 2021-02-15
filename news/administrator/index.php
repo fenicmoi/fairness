@@ -6,15 +6,14 @@ if ($_SESSION["sess_userid"]<>session_id())
 	exit();
 	}
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Tem-admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-874" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>administrator</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
-<STYLE TYPE="TEXT/CSS">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+    <STYLE TYPE="TEXT/CSS">
 <!--
 A:link {
 text-decoration:none;
@@ -22,10 +21,8 @@ text-decoration:none;
 A:visited {
 text-decoration:none;
 }
-//-->
 </STYLE>
 <style type="text/css">
-<!--
 body {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -34,10 +31,8 @@ body {
 	background-image:    url();
 	background-color: #4A4A4A;
 }
--->
 </style>
 <style type="text/css">
-<!--
 .dxnbGroupContent {BORDER-BOTTOM: #a8a8a8 1px solid; BORDER-LEFT: #a8a8a8 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT: 9pt Tahoma; COLOR: #1e3695; BORDER-TOP: #a8a8a8 1px solid; BORDER-RIGHT: #a8a8a8 1px solid; PADDING-TOP: 5px
 }
 .dxnbGroupHeader {	TEXT-ALIGN: left;
@@ -91,20 +86,12 @@ function MM_swapImage() { //v3.0
 }
 </script>
 
-
-
-
-<style type='text/css'>
-.style1 a{ color:#FFFFFF}
-.style1 a:hover{color:#CCCCCC}
-.style16 {color: #FFFFFF}
-</style>
 </head>
-
-<body onload="MM_preloadImages('../icons/name-n%5B1%5D.png','../icons/name-x%5B1%5D.png','../icons/kk%5B2%5D.png','../icons/sa%5B2%5D.png','../icons/make%5B1%5D.png','../icons/st%5B1-%5D.png','../icons/pet%5B2%5D.png','../icons/room%5B1-%5D.png','../icons/le%5B2%5D.png','../icons/set%5B2%5D.png','../icons/ad%5B2%5D.png','../icon/logout2.png')">
+<body>
+<body>
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="100%" colspan="5" valign="top" bgcolor="#84B5FF">�к��Ѵ��â����Ţ������</td>
+    <td width="100%" colspan="5" valign="top" bgcolor="#84B5FF">ระบบข่าว</td>
   </tr>
   
   <tr>
@@ -141,7 +128,7 @@ function MM_swapImage() { //v3.0
           <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td width="1%" background="../images/bg_menu.png"><img src="../images/bg_menu.png" width="4" height="35" /></td>
-              <td width="99%" background="../images/bg_menu.png"><div align="left"><span class="style1">&nbsp;<a href="index.php" title="˹����ѡ">˹����ѡ</a></span></div></td>
+              <td width="99%" background="../images/bg_menu.png"><div align="left"><span class="style1">&nbsp;<a href="index.php" title="˹����ѡ">หน้าหลัก</a></span></div></td>
             </tr>
             
             
@@ -151,7 +138,7 @@ function MM_swapImage() { //v3.0
 			
 			            <tr>
               <td background="../images/bg_menu.png"><img src="../images/bg_menu.png" width="4" height="35" /></td>
-              <td background="../images/bg_menu.png"><div align="left"><span class="style1">&nbsp;<a href="modules/mod_photo/data_act.php" title="�����šԨ���� / �ٻ�Ҿ�Ԩ����">�����šԨ���� / �ٻ�Ҿ�Ԩ����</a></span></div></td>
+              <td background="../images/bg_menu.png"><div align="left"><span class="style1">&nbsp;<a href="modules/mod_photo/data_act.php" title="�����šԨ���� / �ٻ�Ҿ�Ԩ����">เพิ่มข่าว</a></span></div></td>
             </tr>
           </table>          </td>
         <td width="83%" height="25" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -163,8 +150,8 @@ function MM_swapImage() { //v3.0
           <!-- InstanceBeginEditable name="Editad1" -->
           <div align="center">
             <p>&nbsp;</p>
-            <p>�Թ��͹�Ѻ�������к� �Ѵ��â�����������䫵�</p>
-            <p>administrator ����ö�Ѵ��â�������ҡ���ٴ�ҹ����  </p>
+            <p>ไม่รู้สิ</p>
+            <p>administrator  </p>
           </div>
           <!-- InstanceEndEditable --></td>
         </tr>
@@ -177,4 +164,6 @@ function MM_swapImage() { //v3.0
 --> 
 </table>
 </body>
-<!-- InstanceEnd --></html>
+    
+</body>
+</html>
