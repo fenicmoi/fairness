@@ -26,7 +26,7 @@
                     <li class="nav-item">
                         <a class="nav-link link text-white display-4" href="faq.php" aria-expanded="false">FAQ</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#features4-o">ช่องทางการให้บริการ</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php#features4-o">ช่องทางการให้บริการ</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link link dropdown-toggle text-white display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">เกี่ยวกับศูนย์ดำรงธรรม</a>
                         <div class="dropdown-menu"><a class="text-white dropdown-item text-primary display-4" href="page5.html#image1-1j" aria-expanded="true">ประวัติความเป็นมา</a>

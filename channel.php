@@ -18,7 +18,7 @@
                         <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">ศาลากลางจังหวัดพัทลุง</h6>
                         <p class="mbr-text mbr-fonts-style mt-3 display-7">สามารถติดต่อขอรับบริการได้ที่ศาลากลางจังหวัดพัทลุง&nbsp; โดยจะมีเจ้าหน้าที่คอยให้คำปรึกษา</p>
                     </div>
-                    <div class="mbr-section-btn item-footer mt-2"><a href="index.html#map1-p" class="btn item-btn btn-black display-7" target="_blank">แผนที่ &gt;</a></div>
+                    <div class="mbr-section-btn item-footer mt-2"><a href="index.php#map1-p" class="btn item-btn btn-black display-7" target="_blank">แผนที่ &gt;</a></div>
                 </div>
             </div>
             <div class="item features-image сol-12 col-md-6 col-lg-3">
