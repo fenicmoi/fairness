@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include('database.php');
+
 
   $ID = $_SESSION['ID'];
   $name = $_SESSION['name'];

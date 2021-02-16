@@ -1,3 +1,4 @@
+<?php  include("databases.php");?>
 <!DOCTYPE html>
 <html  >
 <head>
@@ -20,9 +21,25 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+   <script type=”text/javascript” src=”ckeditor/ckeditor.js”></script>
+
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'dk8z78zkp9CqStfB8';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
   
 </head>
 <body>
