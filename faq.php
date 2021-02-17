@@ -1,20 +1,9 @@
 <?php 
-session_start(); 
-  $ID = $_SESSION['ID'];
-  $name = $_SESSION['name'];
-  $level = $_SESSION['level'];
- 	if($level!='admin'){
-    Header("Location: logout.php");  
-  }  
-
   include("header.php");
   include("menu.php");
 ?>
 
 <section class="content16 cid-spaqQZNr4E" id="content16-1x">
-
-    
-
     <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(255, 255, 255);">
     </div>
     <div class="container">

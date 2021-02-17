@@ -1,11 +1,4 @@
 <?php 
-session_start(); 
-  $ID = $_SESSION['ID'];
-  $name = $_SESSION['name'];
-  $level = $_SESSION['level'];
- 	if($level!='admin'){
-    Header("Location: logout.php");  
-  }  
 
   include("header.php");
   include("menu.php");

@@ -19,7 +19,6 @@
                                 <div class="item-content">
                                     <h5 class="item-title mbr-fonts-style display-4"><em><?php echo $row['datesave'];?></em></h5>
                                     <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong><?php echo $row['title'];?></strong></h6>
-                                    <p class="mbr-text mbr-fonts-style mt-3 display-7"><?php echo $row['txtMessage'];?></p>
                                 </div>
                                 <div class="mbr-section-btn item-footer mt-2"><a href="news_detail.php?id=<?php echo $row['a_id'];?>" class="btn item-btn btn-primary-outline display-7" target="_blank">อ่านต่อ &gt;</a></div>
                             </div>

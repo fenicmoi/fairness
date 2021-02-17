@@ -1,6 +1,6 @@
 <section class="features4 cid-snWmKngDhj" id="features4-o">
     
-    <div class="mbr-overlay"></div>
+    <div class="mbr-overlay mb-0"></div>
     <div class="container">
         <div class="mbr-section-head">
             <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">

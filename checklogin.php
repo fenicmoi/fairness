@@ -1,17 +1,17 @@
 <?php 
 session_start();
         if(isset($_POST['username'])){
-                  include("condb.php");
+                  include("database.php");
                   $username = $_POST['username'];
                   $password = $_POST['password'];
 
                   $sql="SELECT * FROM login 
                   WHERE  username='".$username."' 
                   AND  password='".$password."' ";
-                  $result = mysqli_query($con,$sql);
+                  $result = dbQuery($sql);
 				
-                  if(mysqli_num_rows($result)==1){
-                      $row = mysqli_fetch_array($result);
+                  if(dbNumRows($result)==1){
+                      $row = dbFetchArray($result);
 
                       $_SESSION["ID"] = $row["ID"];
                       $_SESSION["name"] = $row["name"];
