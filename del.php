@@ -6,10 +6,10 @@ include("database.php");
  $result = dbQuery($sql);
  if($result){
      echo "<script> alert('Success');</script>";
-     echo "<script>window.location.href = 'admin.php';</script>";
+     echo "<script>window.location.href = 'add_new.php';</script>";
  }else{
      echo "<script> alert('no');</script>";
-     echo "<script>window.location.href = 'admin.php';</script>";
+     echo "<script>window.location.href = 'add_new.php';</script>";
  }
 
 ?>

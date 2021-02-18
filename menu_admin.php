@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="admin.php" aria-expanded="false">หน้าหลัก</a></li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php#features4-o">ช่องทางการให้บริการ</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php"> <i class="fas fa-eye"></i>ดูหน้าหลัก</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="add_new.php">เพิ่มข่าว</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="add_stitic.php">เพิ่มสถิติ</a></li>
         

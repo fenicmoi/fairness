@@ -1,3 +1,12 @@
+<script>
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('txtMessage');
+    function CKupdate() {
+        for (instance in CKEDITOR.instances)
+            CKEDITOR.instances[instance].updateElement();
+    }
+</script>
 <?php 
 session_start(); 
   $ID = $_SESSION['ID'];
@@ -12,7 +21,7 @@ session_start();
   include("database.php");
 ?>
  <script type=”text/javascript” src=”ckeditor/ckeditor.js”></script>
-<section class="form5 cid-sp4MbZ0F1j mt-5" id="form5-1n">
+<section class="form5 cid-sp4MbZ0F1j mt-0" id="form5-1n">
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>เพิ่มสถิติข้อมูล</strong></h3>
@@ -39,6 +48,84 @@ session_start();
     </div>
 </section>
 <?php  
+include_once 'paginaton.class.php';
+
+// Initialize pagination class
+$baseURL = 'add_new.php';
+$limit = 5;
+
+// Paging limit & offset
+$offset = !empty($_GET['page'])?(($_GET['page']-1)*$limit):0;
+
+// Count of all records
+
+$sqlRow = "SELECT  *  FROM  articles";
+$result = dbQuery($sqlRow);
+$rowCount = dbNumRows($result);
+
+// Initialize pagination class
+$pagConfig = array(
+    'baseURL' => $baseURL,
+    'totalRows'=>$rowCount,
+    'perPage'=>$limit
+);
+$pagination =  new Pagination($pagConfig);
+?>
+<section class="" id="content5-1q">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        สถิติ
+                    </div>
+                    <div class="card-body">
+                    <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>เรื่อง</th>
+                                    <th>วันที่สร้าง</th>
+                                    <th><i class="fas fa-cog"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php   
+                                    $sql = "SELECT * FROM static ORDER BY sid DESC LIMIT 0,5";
+                                    $result = dbQuery($sql);
+                                    $row  = dbNumRows($result);
+                                    if($row > 0){?>
+                                         <div class="post-list">
+                                            <?php while($row = dbFetchArray($result)){ ?>
+                                                     <a href="javascript:void(0);">
+                                                    <?php 
+                                                     echo "<tr>
+                                                                <td>". $row['sid']."</td>
+                                                                <td>". $row['title']."</td>
+                                                                <td>".$row['datecreate']."</td>
+                                                                <td> <a href='del_static.php?sid=".$row['sid']."' class='btn btn-danger btn-sm'>ลบ</a></td>
+                                                            </tr>";
+                                                    ?>
+                                                    </a>
+                                            <?php } ?>
+                                           
+                                        </div>
+                                   <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-muted">
+                    <?php echo $pagination->createLinks(); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<?php  
 if(isset($_POST['btnSave'])){
     $title = $_POST['txtTitle'];
     if(isset($_FILES['img'])){
@@ -60,7 +147,7 @@ if(isset($_POST['btnSave'])){
 
     if($result){
         echo "<script> 
-                 window.location.href = 'admin.php';
+                 window.location.href = 'add_stitic.php';
              </script>";
         
     }else{
@@ -73,12 +160,3 @@ if(isset($_POST['btnSave'])){
 
 
 
-<script>
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
-    CKEDITOR.replace('txtMessage');
-    function CKupdate() {
-        for (instance in CKEDITOR.instances)
-            CKEDITOR.instances[instance].updateElement();
-    }
-</script>
