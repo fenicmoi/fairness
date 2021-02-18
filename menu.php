@@ -26,26 +26,25 @@
                     <li class="nav-item">
                         <a class="nav-link link text-white display-4" href="faq.php" aria-expanded="false">FAQ</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php#features4-o">ช่องทางการให้บริการ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link dropdown-toggle text-white display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">E-Service</a>
+                        <div class="dropdown-menu"><a class="text-white dropdown-item text-primary display-4" href="index.php#features4-o" aria-expanded="true">ช่องทางการให้บริการ</a>
+                            <a class="dropdown-item text-white display-4" href="index.php#gallery3-2g">บริการออนไลน์</a>
+                            <a class="dropdown-item text-white display-4" href="index.php#contacts2-t" aria-expanded="false">ติดต่อเรา</a>
+                        </div>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link link dropdown-toggle text-white display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">เกี่ยวกับศูนย์ดำรงธรรม</a>
-                        <div class="dropdown-menu"><a class="text-white dropdown-item text-primary display-4" href="page5.html#image1-1j" aria-expanded="true">ประวัติความเป็นมา</a>
-                        <a class="text-white dropdown-item text-primary display-4" href="page5.html#image2-1k" aria-expanded="true">วิสัยทัศน์ พันธกิจ</a>
-                        <a class="dropdown-item text-white display-4" href="page3.html">โครงสร้างศูนย์ดำรงธรรม</a>
-                        <a class="dropdown-item text-white display-4" href="page4.html" aria-expanded="false">ขั้นตอนการดำเนินงาน</a>
-                        <a class="dropdown-item text-white display-4" href="index.php#image3-u" aria-expanded="false">อำนาจหน้าที่</a>
-                        <a class="dropdown-item text-white display-4" href="page1.html" aria-expanded="false">บทบาทภารกิจ</a>
-                    </div>
+                        <div class="dropdown-menu"><a class="text-white dropdown-item text-primary display-4" href="history.php#image1-1j" aria-expanded="true">ประวัติความเป็นมา</a>
+                            <a class="text-white dropdown-item text-primary display-4" href="history.php#image2-1k" aria-expanded="true">วิสัยทัศน์ พันธกิจ</a>
+                            <a class="dropdown-item text-white display-4" href="structor.php">โครงสร้างศูนย์ดำรงธรรม</a>
+                            <a class="dropdown-item text-white display-4" href="strap.php" aria-expanded="false">ขั้นตอนการดำเนินงาน</a>
+                            <a class="dropdown-item text-white display-4" href="index.php#image3-u" aria-expanded="false">อำนาจหน้าที่</a>
+                            <a class="dropdown-item text-white display-4" href="power.php" aria-expanded="false">บทบาทภารกิจ</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link text-white display-4" href="static.php">สถิติรับเรื่อง</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link link dropdown-toggle text-white display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">คู่มือการใช้งาน</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item text-white display-4" href="#" aria-expanded="false">คู่มือใช้งานเว็บไซต์</a>
-                            <a class="dropdown-item text-white display-4" href="#" aria-expanded="false">คู่มือใช้งาน App</a>
-                        </div>
                     </li>
                 </ul>
                 

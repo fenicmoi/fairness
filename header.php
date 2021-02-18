@@ -21,10 +21,12 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="img.css">
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://kit.fontawesome.com/d1483361bb.js" crossorigin="anonymous"></script>
 
    <script type=”text/javascript” src=”ckeditor/ckeditor.js”></script>
+
 
 <!-- Chatra {literal} -->
 <script>
@@ -44,4 +46,3 @@
   
 </head>
 <body>
-<div id="sfcj9zg9y8lzh1lhxftcbczthqayxc49g2k"></div><script type="text/javascript" src="https://counter4.stat.ovh/private/counter.js?c=j9zg9y8lzh1lhxftcbczthqayxc49g2k&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter4.stat.ovh/private/freecounterstat.php?c=j9zg9y8lzh1lhxftcbczthqayxc49g2k" border="0" title="web counter" alt="web counter"></a></noscript>

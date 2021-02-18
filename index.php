@@ -9,12 +9,12 @@
  include("news.php");
  include("sec_img.php");
  include("vdo.php");
-
+ include("service.php");
  include("contact.php");
  include("map.php");
  include("footer.php");
  ?> 
- 
+
 
 
 

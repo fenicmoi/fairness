@@ -3,7 +3,7 @@
     <div class="align-center container-fluid">
         <div class="row justify-content-center">
             <div class="card col-12 col-lg-6">
-                <div class="wrapper">
+                <div class="wrapper mt-0">
                     <h3 class="mbr-section-title mb-4 mbr-fonts-style display-5"><strong>บริการผ่านระบบ</strong></h3>
                     <p class="mbr-text mb-4 mbr-fonts-style display-4">
                         ท่านสามารถลงทะเบียนเพื่อขอความช่วยเหลือได้ผ่านระบบ Web Application&nbsp;&nbsp;</p>
