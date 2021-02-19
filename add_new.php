@@ -11,7 +11,14 @@ session_start();
   include("menu_admin.php");
   include("database.php");
 ?>
- <script type=”text/javascript” src=”ckeditor/ckeditor.js”></script>
+<script  src="./ckeditor/ckeditor.js"></script>  
+<script>
+    CKEDITOR.replace('txtMessage');
+        function CKupdate() {
+            for (instance in CKEDITOR.instances)
+            CKEDITOR.instances[instance].updateElement();
+         }
+</script>
 
 <section class="form5 cid-sp4MbZ0F1j mt-5" id="form5-1n">
     <div class="container">
@@ -26,7 +33,9 @@ session_start();
                             <input type="text" name="txtTitle" placeholder="เรื่อง" data-form-field="title" class="form-control" value="" id="txtTitle">
                         </div>
                         <div class="col-12 form-group" data-for="txtMessage">
-                            <textarea name="txtMessage" id="txtMessage" placeholder="รายละเอียด" data-form-field="txtMessage" class="form-control" ></textarea>
+                            <textarea name="txtMessage" id="txtMessage" placeholder="รายละเอียด" data-form-field="txtMessage" class="form-control" >
+                            </textarea>
+                           
                         </div>
                         <div class="col-12 form-group" data-for="img">
                             <input class="form-control" type="file" name="img" id="img">

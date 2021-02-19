@@ -27,25 +27,6 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://kit.fontawesome.com/d1483361bb.js" crossorigin="anonymous"></script>
 
-  <script type=”text/javascript” src=”ckeditor/ckeditor.js”></script>
-
-<script>
-    $(window).on('load', function(){
-		setTimeout(function(){
-			$('#homepageModal').modal('show')
-		}, 500);
-	}); 
-</script>
-
-<style>
-    .modal-header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    }
-</style>
-
 <!-- Chatra {literal} -->
 <script>
     (function(d, w, c) {
@@ -61,5 +42,7 @@
 </script>
 <!-- /Chatra {/literal} -->
   
-</head>
+
+</head> 
 <body>
+

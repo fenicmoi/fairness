@@ -53,7 +53,8 @@
                     </figure>
                     <div class="mbr-section-btn item-footer mt-2"><a href="http://www.damrongdham.moi.go.th/user/login" class="btn item-btn btn-black display-7" target="_blank">สมัครใช้งาน &gt;</a></div>
                 </div>
-            </div><div class="item features-image сol-12 col-md-6 col-lg-3">
+            </div>
+            <div class="item features-image сol-12 col-md-6 col-lg-3">
                 <div class="item-wrapper hover15">
                     <figure>
                     <div class="item-img">
