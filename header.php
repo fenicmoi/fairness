@@ -22,16 +22,34 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   <link rel="stylesheet" href="img.css">
+
+
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://kit.fontawesome.com/d1483361bb.js" crossorigin="anonymous"></script>
 
-   <script type=”text/javascript” src=”ckeditor/ckeditor.js”></script>
+  <script type=”text/javascript” src=”ckeditor/ckeditor.js”></script>
 
+<script>
+    $(window).on('load', function(){
+		setTimeout(function(){
+			$('#homepageModal').modal('show')
+		}, 500);
+	}); 
+</script>
+
+<style>
+    .modal-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    }
+</style>
 
 <!-- Chatra {literal} -->
 <script>
     (function(d, w, c) {
-        w.ChatraID = 'dk8z78zkp9CqStfB8';
+        w.ChatraID = 'yc3J39oBkJYJTEMG7';
         var s = d.createElement('script');
         w[c] = w[c] || function() {
             (w[c].q = w[c].q || []).push(arguments);
@@ -42,7 +60,6 @@
     })(document, window, 'Chatra');
 </script>
 <!-- /Chatra {/literal} -->
-
   
 </head>
 <body>

@@ -17,7 +17,7 @@
                             <strong>Phone</strong>
                         </h6>
                         <p class="mbr-text mbr-fonts-style display-7">
-                            <a href="tel:+12345678910" class="text-primary">0 (800) 123 45 67</a>
+                            <a href="tel:074614130" class="text-primary">074-614130 สายด่วน 1567  ตลอด 24 ชั่วโมง</a>
                         </p>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                         <h6 class="card-title mbr-fonts-style mb-1 display-5">
                             <strong>Email</strong>
                         </h6>
-                        <p class="mbr-text mbr-fonts-style display-7"><a href="mailto:info@site.com" class="text-primary">phatthalung@moi.go.th</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                        <p class="mbr-text mbr-fonts-style display-7"><a href="mailto:damrongthamptl@gmail.com" class="text-primary">damrongthamptl@gmail.com</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                     </div>
                 </div>
             </div>

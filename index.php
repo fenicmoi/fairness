@@ -1,6 +1,6 @@
 
  <?php 
- 
+ include("config.php");
  include("database.php");
  include("header.php");
  include("menu.php");
@@ -14,6 +14,9 @@
  include("map.php");
  include("footer.php");
  ?> 
+
+
+
 
 
 
