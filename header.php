@@ -42,8 +42,6 @@
     })(document, window, 'Chatra');
 </script>
 <!-- /Chatra {/literal} -->
-  
 
 </head> 
 <body>
-

@@ -1,11 +1,12 @@
 <section class="features4 cid-snWmKngDhj" id="features4-o">
-    
-    <div class="mbr-overlay mb-0"></div>
+
+    <div class="mbr-overlay mb-0"></div> 
     <div class="container">
+    
         <div class="mbr-section-head">
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                <strong>ช่องทางการให้บริการ</strong></h4>
-            
+                 <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                    <strong>ช่องทางการให้บริการ</strong>
+                </h4>
         </div>
         <div class="row mt-4">
             <div class="item features-image сol-12 col-md-6 col-lg-3 hover15 ">

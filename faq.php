@@ -28,7 +28,7 @@
                         </div>
                         <div id="collapse1_35" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_35">
                             <div class="panel-body">
-                                <p class="mbr-fonts-style panel-text display-4">E-Mail = phatthalung@moi.go.th</p>
+                                <p class="mbr-fonts-style panel-text display-4">E-Mail = damrongthamptl@gmail.com</p>
                             </div>
                         </div>
                     </div>

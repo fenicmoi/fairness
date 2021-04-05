@@ -1,5 +1,5 @@
 <section class="info2 cid-snW5YUmrAP" id="info2-f">
-    
+
     <div class="align-center container-fluid">
         <div class="row justify-content-center">
             <div class="card col-12 col-lg-6 hover15">

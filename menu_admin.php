@@ -24,6 +24,7 @@
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php"> <i class="fas fa-eye"></i>ดูหน้าหลัก</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="add_new.php">เพิ่มข่าว</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="add_stitic.php">เพิ่มสถิติ</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="add_doc.php">เพิ่มเอกสาร</a></li>
         
                 </ul>
                 

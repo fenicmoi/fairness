@@ -16,21 +16,35 @@
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
                 <div class="image-wrapper">
-                    <img src="<?php echo $row['img'];?>" alt="Mobirise">
-                </div>
-            </div>
-            <div class="col-12 col-md">
-                <div class="text-wrapper">
-                    <p class="name mbr-fonts-style mb-1 display-4">
-                        <strong><?php echo $row['title'];?></strong>
-                    </p>
-                    <p class="position mbr-fonts-style display-4">
-                        <strong><?php echo $row['m_username'];?></strong>
-                    </p>
-                    <p class="mbr-text mbr-fonts-style mb-4 display-7"><?php echo $row['txtMessage'];?></p>
-                    
+                    <?php  
+                        if($row['img'] == ''){  ?>
+                        <img class="rounded" src="pic/image-default.png" alt="ภาพข่าว">
+                    <?php  }else{  ?>
+                        <img class="rounded" src="pic/<?php echo $row['img'];?>" alt="ภาพข่าว">
+                    <?php  }?>
                    
                 </div>
+            </div>
+            <div class="col-12 col-md ">
+                <table class="table align-top">
+                    <thead>
+                        <tr>
+                            <th>
+                              <strong><?php echo $row['title'];?></strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 
+                            <?php echo $row['txtMessage'];?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Writer:<?php echo $row['m_username'];?></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

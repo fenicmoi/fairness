@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <div class="image-wrapper">
-                    <img src="assets/images/damrong-logo-696x432.jpg" alt="Mobirise">
+                    <img src="assets/images/damrong-info.jpg" alt="Mobirise">
                 </div>
             </div>
         </div>
